@@ -32,6 +32,7 @@ function App() {
 		});
 	};
 	return (
+		
 		<div className="flex flex-col w-[100vw]">
 			{/* scroll to top button */}
 			<Slide bottom>
@@ -73,6 +74,7 @@ function App() {
 					<OurPartners />
 				</div>
 			</div>
+			{/* rendering the footer  */}
 			<Slide bottom>
 				<div className="md:h-[65vh] w-[100%] contact">
 					<Footer onScroll={onScroll} />
