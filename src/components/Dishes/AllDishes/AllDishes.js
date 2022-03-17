@@ -25,7 +25,7 @@ const AllDishes = () => {
 		},
 	};
 	return (
-		<div className="h-[80%]">
+		<div className="h-[90%]">
 			<Carousel
 				responsive={responsive}
 				arrows={true}

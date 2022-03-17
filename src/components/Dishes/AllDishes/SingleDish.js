@@ -49,7 +49,7 @@ const SingleDish = ({ imageURL, name, price, info, id }) => {
           <p className="text-center text-xs sm:text-lg md:text-lg">{info}</p>
         </div>
         {/* order */}
-        <div onClick={addToCartHandler} className="cursor-pointer hover:bg-opacity-[0.99] transition duration-[350ms] transform hover:translate-y-2 hover:text-gray-100 text-gray-300 rounded-md text-center py-2 sm:py-2 md:py-2 px-2 sm:px-2 md:px-0 bg-red-800 w-[70%] sm:w-[50%] md:w-[30%] mx-auto hover:bg-red-700">
+        <div onClick={addToCartHandler} className="cursor-pointer hover:bg-opacity-[0.99] transition duration-[350ms] transform  hover:text-gray-100 text-gray-300 rounded-md text-center py-2 sm:py-2 md:py-2 px-2 sm:px-2 md:px-0 bg-red-800 w-[70%] sm:w-[50%] md:w-[30%] mx-auto hover:bg-red-700">
           <p className="" >ORDER</p>
         </div>
       </div>

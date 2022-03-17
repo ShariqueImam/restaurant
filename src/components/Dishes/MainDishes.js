@@ -34,11 +34,11 @@ const MainDishes = () => {
       {/* all dishes */}
       <div className="">
         {/* heading */}
-          <div className="flex my-8 sm:my-8 md:my-16">
+          <div className="flex my-8 sm:my-8 md:my-12">
             <Heading heading="ALL DISHES" />
 			</div>
         {/* all dishes carousel */}
-        <div>
+        <div className="h-[100%]">
           <AllDishes />
         </div>
       </div>
