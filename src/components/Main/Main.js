@@ -16,7 +16,6 @@ function Main() {
 
 	// this value act as the class to which it will scroll
 	const onScroll = (value) => {
-		console.log(value)
 		scroller.scrollTo(`${value}`, {
 			duration: 600,
 			delay: 0,

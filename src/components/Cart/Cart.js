@@ -9,7 +9,8 @@ import { Slide } from 'react-reveal'
 const style = {
   cart: "",
   header: "w-[100%] h-[60%] flex flex-col",
-  cartHeading: "w-[100%] flex justify-center",
+  cartHeading: "w-[100%] flex justify-center ",
+  headingImage: 'scale-[0.7] sm:scale-[0.75] md:scale-[1]',
   cartContainer: "rounded-2xl bg-red-100 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[55%] flex flex-col mx-auto my-16 p-3 py-8 md:p-10",
   cartItemsContainer: "flex flex-col",
   total: "flex text-xl sm:text-xl md:text-xl lg:text-xl ml-auto",
@@ -44,7 +45,7 @@ const Cart = () => {
       </div>
       {/* add the cart heading */}
       <div className={style.cartHeading}>
-        <img src="https://fontmeme.com/permalink/220316/34c2d7db96cc3c93e394fb1b37f2762a.png" alt="signature-fonts" border="0" />
+        <img src="https://fontmeme.com/permalink/220316/34c2d7db96cc3c93e394fb1b37f2762a.png" alt="signature-fonts" border="0" className={style.headingImage} />
       </div>
       {/* add the cart container */}
       <div className={style.cartContainer}>

@@ -2,7 +2,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
@@ -11,7 +10,9 @@ import HomeIcon from "@mui/icons-material/Home";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import StarBorderPurple500Icon from "@mui/icons-material/StarBorderPurple500";
 import GroupWorkIcon from "@mui/icons-material/GroupWork";
+import { RiShoppingBag3Line } from 'react-icons/ri'
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
+import { Link } from 'react-router-dom'
 const NavDrawer = (props) => {
 	const [state, setState] = React.useState({
 		right: false,
@@ -36,7 +37,7 @@ const NavDrawer = (props) => {
 				backgroundColor: "rgb(255, 255, 255)",
 				width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
 				height: 1200,
-				letterSpacing:'5px'
+				letterSpacing: '5px'
 			}}
 			role="presentation"
 			onClick={toggleDrawer(anchor, false)}
@@ -61,7 +62,7 @@ const NavDrawer = (props) => {
 					(text, index) => (
 						<ListItem button key={text}>
 							<ListItemIcon>
-								<div className="py-2" onClick={handleNavClick}>
+								<div className="py-2">
 									{text === "Home" && <HomeIcon style={{ color: '#991b1b' }} />}
 								</div>
 								<div className="py-2" >
@@ -85,11 +86,19 @@ const NavDrawer = (props) => {
 						</ListItem>
 					)
 				)}
+				<ListItem button >
+					<Link to="/cart" className="py-2 text-2xl">
+						{<RiShoppingBag3Line style={{ color: '#991b1b' }} />}
+					</Link>
+					<Link to="/cart" className="mx-8 w-[100%]">
+						<ListItemText primary={'Cart'} />
+					</Link>
+				</ListItem>
 			</List>
 			<div className=" h-[40%] bg-gradient-to-br from-red-500 to-red-800 w-[20%] 	transform skew-x-[20deg]  overflow-hidden">
-		<div className="">
+				<div className="">
 
-		</div>
+				</div>
 			</div>
 		</Box>
 	);
