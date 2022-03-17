@@ -1,13 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Dish1 from "../../assets/images/dishes/6.jpeg";
-import Dish2 from "../../assets/images/dishes/7.jpeg";
-import Dish3 from "../../assets/images/dishes/8.jpeg";
-import Dish4 from "../../assets/images/dishes/11.jpeg";
-import Dish5 from "../../assets/images/dishes/12.jpg";
-import Dish6 from "../../assets/images/dishes/13.jpg";
-import Dish7 from "../../assets/images/dishes/14.jpeg";
 import SingleDish from "./SingleDish";
 
 const AllDishes = () => {
@@ -39,7 +32,6 @@ const AllDishes = () => {
 				swipeable={width < 1000 ? true : false}
 				draggable={false}
 				// showDots={true}
-				responsive={responsive}
 				ssr={true} // means to render carousel on server-side.
 				infinite={true}
 				autoPlay={true}
@@ -52,76 +44,83 @@ const AllDishes = () => {
 				// deviceType={this.props.deviceType}
 				dotListClass="custom-dot-list-style"
 				itemClass="carousel-item-padding-40-px"
-				// customButtonGroup={<ButtonGroup />}
+			// customButtonGroup={<ButtonGroup />}
 			>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='1'
 						name={"BHAIL PURI"}
-						price={"$2.99"}
+						price="2.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish1}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506499/William%20Barley/mainImages/6_ya0oad.jpg"}
 					/>
 				</div>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='2'
 						name={"PASTA"}
-						price={"$4.99"}
+						price="4.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish2}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506500/William%20Barley/mainImages/10_gqhucs.jpg"}
 					/>
 				</div>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='3'
 						name={"PIZZA PASTA"}
-						price={"$8.99"}
+						price="1.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish3}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506500/William%20Barley/mainImages/9_sxtw8h.jpg"}
 					/>
 				</div>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='4'
 						name={"SAMOSA"}
-						price={"$2.99"}
+						price="2.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish4}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506500/William%20Barley/mainImages/11_xexm9b.jpg"}
 					/>
 				</div>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='5'
 						name={"WHITE KARAHI"}
-						price={"$19.99"}
+						price="19.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish5}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506500/William%20Barley/mainImages/12_aspdex.jpg"}
 					/>
 				</div>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='6'
 						name={"KHEER"}
-						price={"$25.99"}
+						price="25.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish6}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506500/William%20Barley/mainImages/13_unffoh.jpg"}
 					/>
 				</div>
 				<div className=" text-red-800 sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:my-8 md:my-2">
 					<SingleDish
+						id='7'
 						name={"CHAPLI KEBAB"}
-						price={"$9.99"}
+						price="9.99"
 						info={
 							"Lorem ipsum dolor, sit acolor quauredolores. quam quibusdam veritatis earum!"
 						}
-						imageURL={Dish7}
+						imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506500/William%20Barley/mainImages/14_egyb8e.jpg"}
 					/>
 				</div>
 			</Carousel>

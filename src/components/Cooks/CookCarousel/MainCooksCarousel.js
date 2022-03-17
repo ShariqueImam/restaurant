@@ -1,9 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Cook1 from "../../assets/images/cooks/cook1.png";
-import Cook2 from "../../assets/images/cooks/cook2.png";
-import Cook3 from "../../assets/images/cooks/cook3.png";
+
 import SingleCook from './SingleCook'
 import { Slide } from 'react-reveal'
 const MainCarousel = () => {
@@ -34,7 +32,6 @@ const MainCarousel = () => {
                 arrows={true}
                 swipeable={width < 700 ? true : false}
                 draggable={false}
-                responsive={responsive}
                 // showDots={true}
                 ssr={true} // means to render carousel on server-side.
                 infinite={true}
@@ -57,7 +54,7 @@ const MainCarousel = () => {
                             expert={
                                 "CHICKEN STAKE, CHAPLI KEBAB"
                             }
-                            imageURL={Cook1}
+                            imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506536/William%20Barley/mainImages/pexels-miquel-ferran-gomez-figueroa-3814446-removebg-preview_ecsrad.png"}
                         />
                     </div>
                 </Slide>
@@ -71,7 +68,7 @@ const MainCarousel = () => {
                             expert={
                                 "PASTA, PIZZA"
                             }
-                            imageURL={Cook2}
+                            imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506536/William%20Barley/mainImages/pexels-kampus-production-6605421-removebg-preview_lkto0p.png"}
                         />
                     </div>
                 </Slide>
@@ -85,7 +82,7 @@ const MainCarousel = () => {
                             expert={
                                 "FRIED CHICKEN"
                             }
-                            imageURL={Cook3}
+                            imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506536/William%20Barley/mainImages/cook3_n9gmrs.png"}
                         />
                     </div>
                 </Slide>

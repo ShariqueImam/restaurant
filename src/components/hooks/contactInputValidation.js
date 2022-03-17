@@ -2,7 +2,7 @@ import react, { useState } from "react";
 
 const useInput = (validationFn) => {
 
-	const [enteredValue, setValue] = useState(" ");
+	const [enteredValue, setValue] = useState('');
 	const [isTouched, setTouched] = useState(false);
 	// check if the enteredValue is valid or not
 	const enteredValueIsValid = validationFn(enteredValue);

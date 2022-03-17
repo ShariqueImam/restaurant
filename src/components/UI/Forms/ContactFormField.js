@@ -14,7 +14,7 @@ const ContactFormField = (props) => {
 		<Box
 			component="form"	
 			sx={{
-				"& > :not(style)": { m:screenWidth > 500 ? 0:0 ,width: screenWidth > 700 ? "30ch" : "35ch" ,color:'white'},
+				"& > :not(style)": { m:screenWidth > 500 ? 0:0 ,width: screenWidth > 750 ? "40ch" : "35ch" ,color:'white'},
 			}}
 			noValidate
 			autoComplete="off"

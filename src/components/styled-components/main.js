@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
-import MainBg from '../assets/images/homebg.jpg'
 // import MainBg from '../assets/images/bgHome2.png'
 
 
 
 // getting the screen width for toggling the images in desktop tab and mobile view
 const screenWidth = window.innerWidth
-
+const MainBg = 'https://res.cloudinary.com/shariqcloud/image/upload/v1647506517/William%20Barley/mainImages/homebg_zfkdmq.jpg'
 export const StyledHome = styled.div`
-	background: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(${screenWidth < 500 && MainBg || screenWidth > 500 &&screenWidth<1200 && MainBg || screenWidth > 1200 && MainBg});
+	background: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(${screenWidth < 500 && MainBg || screenWidth > 500 && screenWidth < 1200 && MainBg || screenWidth > 1200 && MainBg});
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

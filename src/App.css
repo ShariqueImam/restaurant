@@ -1,44 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+/* for the headings */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap");
+/* for small headings */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+/* for small heading */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
-.ani:hover{
-    animation: translate 300ms ease-in-out 0s forwards;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+.ani:hover {
+  animation: translate 300ms ease-in-out 0s forwards;
 }
 
 @keyframes translate {
-	0% {
-		transform: translateY(0);
-        background-color: rgb(127,29,29);
-	}
-	100% {
-		transform: translateY(0.5rem);
-        background-color: rgb(185,28,28);
-	}
+  0% {
+    transform: translateY(0);
+    background-color: rgb(127, 29, 29);
+  }
+  100% {
+    transform: translateY(0.2rem);
+    background-color: rgb(185, 28, 28);
+  }
 }
 
-.nav-bar-animation:hover{
-	animation: nav-bar 150ms ease-in-out 0s forwards;
+.nav-bar-animation:hover {
+  animation: nav-bar 150ms ease-in-out 0s forwards;
 }
 @keyframes nav-bar {
-	0% {
-		transform: translateY(0);
-        color: rgb(127,29,29);
-	}
-	100% {
-		transform: translateY(0.2rem);
-        color: rgb(185,28,28);
-		border-bottom:2px solid rgb(185,28,28);
-	}
+  0% {
+    transform: translateY(0);
+    color: rgb(127, 29, 29);
+  }
+  100% {
+    transform: translateY(0.2rem);
+    color: rgb(185, 28, 28);
+    border-bottom: 2px solid rgb(185, 28, 28);
+  }
 }

@@ -60,8 +60,8 @@ const ContactForm = () => {
 					valueChangeHandler={messageChangeHandler}
 				/>
 			</div>
-			<button type="submit" className="sm:mx-0 text-xs w-[100%] sm:w-[65%] flex justify-center items-center">
-				<p className="ani py-2 sm:px-4 w-[40%] mx-auto rounded-2xl bg-red-900">
+			<button type="submit" className="mx-auto text-xs w-[100%] sm:w-[65%] flex justify-center items-center">
+				<p className="ani py-2 sm:px-4 w-[60%] mx-auto rounded-2xl bg-red-900">
 					Send
 				</p>
 			</button>

@@ -4,7 +4,7 @@ const SingleCook = (props) => {
     return (
         <div className="w-[100%] h-[100%]">
 			{/* image */}
-			<div className="w-[100%] h-[60%] flex">
+			<div className="w-[100%] h-[75%] flex">
                 <img src={`${props.imageURL}`} alt={`${props.name} Image` }  className="w-[40%] h-[100%] mx-auto"/>
 			</div>
 			{/* name */}

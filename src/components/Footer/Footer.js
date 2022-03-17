@@ -13,7 +13,7 @@ const Footer = (props) => {
 	const homeClickHandler = () => {
 		props.onScroll('home');
 	}
-	;
+		;
 	const specialityClickHandler = () => {
 		props.onScroll("speciality");
 
@@ -31,20 +31,20 @@ const Footer = (props) => {
 
 	};
 	return (
-		<div className="w-[100%] h-[100%] bg-red-800 text-white">
+		<div className="w-[100%] bg-red-800 text-white flex flex-col items-center justify-center">
 			{/* top block */}
-			<div className="h-[30%] w-[100%] md:w-[50%] mx-auto flex justify-between items-center">
+			<div className="p-8 h-[30%] w-[100%] md:w-[80%] mx-auto flex justify-between items-center">
 				<a
 					className={` flex flex-col justify-center tracking-wider w-[45%] h-[100%] sm:h-[100%] md:h-[80%] text-center ani bg-red-900 p-4 py-10 sm:py-10 md:py-8 my-2 sm:my-2 md:my-2 rounded-3xl  text-white cursor-pointer transform hover:translate-y-3`}
 					href="whatsapp://send?text=William Barley Here! How can we help you?&phone=+923174290702"
 				>
-					<div className="text-sm">Contact Us at +92317 4290702</div>
+					<div className="text-xs sm:text-sm">Contact Us at +92 (303) 9695850</div>
 					<div className="text-center" style={{ color: "white" }}>
 						<PhoneIcon />
 					</div>
 				</a>
 				<div className={` flex flex-col justify-center tracking-wider ani w-[45%] h-[100%] sm:h-[100%] md:h-[80%] text-center  bg-red-900 p-4 py-8 my-2 sm:my-2 md:my-2 rounded-3xl  text-white cursor-pointer transform hover:translate-y-3`}>
-					<div className="text-sm">
+					<div className="text-xs sm:text-sm">
 						Office No 2 ,Main Boulevard, California.
 					</div>
 					<div className="text-center" style={{ color: "white" }}>
@@ -54,22 +54,22 @@ const Footer = (props) => {
 			</div>
 
 			{/* center block */}
-			<div className="h-[55%] w-[100%] mx-0 md:mx-8 my-4 grid grid-cols-1 sm:grid-cols-2 md:flex">
+			<div className="h-[55%] w-[100%] mx-0 md:mx-8 my-4  md:flex py-12">
 				{/* company info */}
-				<div className="w-[100%] md:w-[30%] flex flex-col">
+				<div className="w-[100%] md:w-[30%] flex flex-col my-12 md:my-1 ">
 					<img
 						src={`${Logo}`}
 						alt="William Barley"
-						className="h-[50%] md:h-[30%] w-60% md:w-[50%] mx-auto"
+						className="h-[50%] md:h-[30%] w-[60%] md:w-[50%] mx-auto"
 					/>
-					<div className="text-white text-xs md:text-sm text-center mb-8 sm:mb-0">
+					<div className="text-white text-xs md:text-sm text-center mb-8 sm:mb-0 w-[70%] md:w-[100%] mx-auto" >
 						Lorem omnis sed quaeomnis sed quaerat consequatrat
 						consequaturr quia fugit accusamus labore et possimus
 						doloremque molestias molestiae sequi blanditi.
 					</div>
 				</div>
 				{/* navigation */}
-				<div className="w-[100%] md:w-[20%] flex flex-col">
+				<div className="w-[100%] md:w-[30%] flex flex-col">
 					<h2 className="text-center">QUICK LINKS</h2>
 					<ul
 						style={{
@@ -77,27 +77,27 @@ const Footer = (props) => {
 						}}
 						className="font-thin text-sm flex flex-col items-center my-auto"
 					>
-						<li className="m-2 cursor-pointer" onClick={homeClickHandler}>HOME</li>
-						<li className="m-2 cursor-pointer" onClick={specialityClickHandler}>SPECIALITY</li>
-						<li className="m-2 cursor-pointer" onClick={cookClickHandler}>CHEFS</li>
-						<li className="m-2 cursor-pointer" onClick={ourpartnersClickHandler}>OUR PARTNERS</li>
-						<li className="m-2 cursor-pointer" onClick={contactClickHandler}>CONTACT</li>
+						<li className="m-2 p-1 cursor-pointer" onClick={homeClickHandler}>HOME</li>
+						<li className="m-2 p-1 cursor-pointer" onClick={specialityClickHandler}>SPECIALITY</li>
+						<li className="m-2 p-1 cursor-pointer" onClick={cookClickHandler}>CHEFS</li>
+						<li className="m-2 p-1 cursor-pointer" onClick={ourpartnersClickHandler}>OUR PARTNERS</li>
+						<li className="m-2 p-1 cursor-pointer" onClick={contactClickHandler}>CONTACT</li>
 					</ul>
 				</div>
 				{/* contact */}
-				<div className="w-[100%] md:w-[25%]">
-					<h2 className="w-50% mx-auto mt-8 sm:mt-0 text-center sm:text-justify">CONTACT US</h2>
+				<div className="w-[100%] md:w-[40%] flex flex-col items-center">
+					<h2 className="w-50%  mt-8 sm:mt-0 text-center sm:text-justify">CONTACT US</h2>
 					<ContactForm />
 				</div>
 				{/* map */}
-				<div className="w-[100%] md:w-[10%] flex items-center justify-center">
+				{/* <div className="w-[100%] md:w-[10%] flex items-center justify-center">
 					<Location />
-				</div>
+				</div> */}
 			</div>
 
 			{/* bottom block */}
 			<div
-				className="h-[15%] bg-red-900 w-[100%] flex flex-col"
+				className="h-[15%] bg-red-900 w-[100%] flex flex-col p-4"
 				style={{
 					color: "rgb(255,255,255)",
 					fontFamily: "Fira Sans, sans-serif",
@@ -105,23 +105,23 @@ const Footer = (props) => {
 			>
 				{/* icons */}
 				<div className="w-[50%] sm:w-[35%] md:w-[10%] flex mx-auto justify-around p-1">
-					<div className="cursor-pointer">
+					<div className="cursor-pointer p-1">
 						<a href="https://google.com">
 							<FacebookIcon />
 						</a>
 					</div>
-					<div className="cursor-pointer">
+					<div className="cursor-pointer p-1">
 						<a href="https://google.com">
 
 							<InstagramIcon />
 						</a>
 					</div>
-					<div className="cursor-pointer">
+					<div className="cursor-pointer p-1">
 						<a href="https://google.com">
 							<TwitterIcon />
 						</a>
 					</div>
-					<div className="cursor-pointer">
+					<div className="cursor-pointer p-1">
 						<a href="https://google.com">
 
 							<LinkedInIcon />

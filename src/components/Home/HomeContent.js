@@ -26,17 +26,17 @@ const HomeContent = (props	) => {
 					</p>
 				</div>
 				{/* heading */}
-				<div className="text-red-800 text-5xl sm:text-7xl md:text-7xl tracking-widest mx-auto my-3">
+				<div className="text-red-800 text-5xl sm:text-7xl md:text-5xl lg:text-7xl tracking-widest mx-auto my-3">
 					<p className="mx-auto animate__animated animate__backInLeft">
 						FOOD
 					</p>
 				</div>
-				<div className="text-red-800 text-xl sm:text-2xl md:text-2xl flex mt-4">
+				<div className="text-red-800 text-xl sm:text-2xl md:text-xl lg:text-2xl flex mt-4">
 					<p className="text-center mx-auto animate__animated animate__backInUp">
 						IN TOWN
 					</p>
 				</div>
-				<div className="text-red-800 md:text-red-800 text-md sm:text-xl md:text-lg flex my-0 sm:my-8 md:my-4">
+				<div className="text-red-800 md:text-red-800 text-md sm:text-xl md:text-sm lg:text-lg flex my-0 sm:my-8 md:my-4">
 					<p className="text-center mx-auto">
 					Molestiae repellat ut deserunt harum, vero reprehenderit
 							soluta optio obcaecati eos adipisci. Optio, totam

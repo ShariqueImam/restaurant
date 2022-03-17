@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SingleReview from "./SingleReview";
-import Review1 from '../assets/reviews/review1.PNG'
 const ReviewsCarousel = () => {
 	const width = window.innerWidth;
 	const responsive = {
@@ -32,7 +31,6 @@ const ReviewsCarousel = () => {
 				swipeable={width < 1000 ? true : false}
 				draggable={false}
 				// showDots={true}
-				responsive={responsive}
 				ssr={true} // means to render carousel on server-side.
 				infinite={true}
 				autoPlay={width > 1100 ? false : true}
@@ -49,25 +47,25 @@ const ReviewsCarousel = () => {
             >
                 
 				<div className=" text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'Sharique'} imageURL={Review1} mainText={'Good quality food...'} review={'Lorem ipsum dolo Aperiam doloribus voluptas non ut, aspernatur fures mium? Minima laboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
+					<SingleReview nameOfReviewer={'Sharique'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} mainText={'Good quality food...'} review={'Lorem ipsum dolo Aperiam doloribus voluptas non ut, aspernatur fures mium? Minima laboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
 				</div>
 				<div className="text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'Ana'} mainText={'Well served...'} imageURL={Review1} review={'Lorem ipsum dolor sitctetur  Aperiam dolor, aspernatur fures mium? Minima laboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
+					<SingleReview nameOfReviewer={'Ana'} mainText={'Well served...'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} review={'Lorem ipsum dolor sitctetur  Aperiam dolor, aspernatur fures mium? Minima laboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
 				</div>
 				<div className="text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%] mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'Williamson'} mainText={'Instant delivery...'} imageURL={Review1} review={'Lorem ipsusit amet consectetur  Aperiam dolort, aspernatur fures mium? Minima laboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
+					<SingleReview nameOfReviewer={'Williamson'} mainText={'Instant delivery...'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} review={'Lorem ipsusit amet consectetur  Aperiam dolort, aspernatur fures mium? Minima laboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
 				</div>
 				<div className="text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%]	 mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'Kane'} mainText={'Fresh food...'} imageURL={Review1} review={'Lorem ipsum dolor sit amet ctetur  Aperiam doloribus voluptas non ut, aspernaboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
+					<SingleReview nameOfReviewer={'Kane'} mainText={'Fresh food...'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} review={'Lorem ipsum dolor sit amet ctetur  Aperiam doloribus voluptas non ut, aspernaboriosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
 				</div>
 				<div className="text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%]	 mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'Robert'} mainText={'Best ever chicken...'} imageURL={Review1} review={'Lorem ipsum dolor amet consectetur  Aperiam doloribus voluptas non ut, aspernatur friosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
+					<SingleReview nameOfReviewer={'Robert'} mainText={'Best ever chicken...'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} review={'Lorem ipsum dolor amet consectetur  Aperiam doloribus voluptas non ut, aspernatur friosam unde ipsum. periam dolort, aspernatur fures mium? Minim'}/>
 				</div>
 				<div className="text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%]	 mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'Milne'} mainText={'Loved the Pasta...'} imageURL={Review1} review={'Lorem ipsum dolor sit amet consectetur  Aperiam doloris mium? Minima laboriosam unde ipsum.periam dolort, aspernatur fures mium? Minim '}/>
+					<SingleReview nameOfReviewer={'Milne'} mainText={'Loved the Pasta...'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} review={'Lorem ipsum dolor sit amet consectetur  Aperiam doloris mium? Minima laboriosam unde ipsum.periam dolort, aspernatur fures mium? Minim '}/>
 				</div>
 				<div className="text-red-800 w-[70%] sm:w-[90%] md:w-[80%] h-[60%]	 mx-auto sm:mx-auto sm:my-8 md:my-2">
-					<SingleReview nameOfReviewer={'John'} mainText={'Very coperative...'} imageURL={Review1} review={'Lorem ipsum dolor sit amet consectetur  Aperitas non ut, aspernatur fures mium? Minima laboriosam unde ipsum.periam dolort, aspernatur fures mium? Minim'}/>
+					<SingleReview nameOfReviewer={'John'} mainText={'Very coperative...'} imageURL={"https://res.cloudinary.com/shariqcloud/image/upload/v1647506464/William%20Barley/reviews/review1_wtbv39.png"} review={'Lorem ipsum dolor sit amet consectetur  Aperitas non ut, aspernatur fures mium? Minima laboriosam unde ipsum.periam dolort, aspernatur fures mium? Minim'}/>
 				</div>
 			</Carousel>
 			;
