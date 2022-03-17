@@ -86,14 +86,16 @@ const NavDrawer = (props) => {
 						</ListItem>
 					)
 				)}
-				<ListItem button >
-					<Link to="/cart" className="py-2 text-2xl">
-						{<RiShoppingBag3Line style={{ color: '#991b1b' }} />}
-					</Link>
-					<Link to="/cart" className="mx-8 w-[100%]">
-						<ListItemText primary={'Cart'} />
-					</Link>
-				</ListItem>
+				<div className="bg-red-700 rounded-full mx-6 my-4">
+					<ListItem button className="">
+						<Link to="/cart" className="py-2 text-2xl ">
+							{<RiShoppingBag3Line style={{ color: '#e5e7eb' }} />}
+						</Link>
+						<Link to="/cart" className="mx-8 w-[100%] text-gray-200 text-center tracking-widest">
+							<ListItemText primary={'CART'} className="tracking-widest"/>
+						</Link>
+					</ListItem>
+				</div>
 			</List>
 			<div className=" h-[40%] bg-gradient-to-br from-red-500 to-red-800 w-[20%] 	transform skew-x-[20deg]  overflow-hidden">
 				<div className="">
